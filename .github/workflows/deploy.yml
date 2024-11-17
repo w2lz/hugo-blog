@@ -1,0 +1,31 @@
+name: Hugo Build And Deploy To Github Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+        token: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Build the website
+      run: hugo --gc --minify --cleanDestinationDir
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        personal_token: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
+        publish_dir: ./public
+        external_repository: w2lz/w2lz.github.io
+        publish_branch: main
