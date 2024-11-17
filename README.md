@@ -10,7 +10,7 @@
 
 博客内容主要以 Web 后端开发方向为主，分享一些有趣程序、技巧、开发教程、心情和学习记录等。
 
-你可以通过我的[微信公众号](https://blog.yingnan.wang/images/qr-wx-mp.webp "关注「菠菜眾長」公众号")、[GitHub](https://github.com/w2lz/hugo-blog "Watch on GitHub") 或 [RSS](http://blog.yingnan.wang/index.xml) 来订阅本博客。
+你可以通过我的[微信公众号](https://blog.yingnan.wang/images/qr-wx-mp.webp "关注「一个 PHP 菜鸟的心路历程」公众号")、[GitHub](https://github.com/w2lz/hugo-blog "Watch on GitHub") 或 [RSS](http://blog.yingnan.wang/index.xml) 来订阅本博客。
 
 ![blog-preview](/assets/images/apple-devices-preview.webp)
 

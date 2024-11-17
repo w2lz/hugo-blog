@@ -67,8 +67,8 @@ class ValineHacker {
     }
     new Valine({
       el: '#valine',
-      appId: '',
-      appKey: '',
+      appId: 'RZSjN71h64vdwFareAx25viV-MdYXbMMI',
+      appKey: 'k86fdPvzytrYE7hj7frledny',
       placeholder: 'ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱哦！',
       avatar: 'wavatar',
       meta: ['nick', 'mail', 'link'],

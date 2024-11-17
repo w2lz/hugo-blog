@@ -72,7 +72,7 @@ disableThemeInject = false
 
 # Search config
 [search]
-  enable = false
+  enable = true
   # type of search engine ("lunr", "algolia")
   type = "algolia"
   # max index length of the chunked content
@@ -88,9 +88,9 @@ disableThemeInject = false
   # whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
   [search.algolia]
-    index = ""
-    appID = ""
-    searchKey = ""
+    index = "search"
+    appID = "QAZSU1QVH7"
+    searchKey = "ffd23519a321c724dbe6bacd82d9ffd2"
 
 # Header config
 [header]
