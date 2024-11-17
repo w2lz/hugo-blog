@@ -29,3 +29,6 @@ jobs:
         publish_dir: ./public
         external_repository: w2lz/w2lz.github.io
         publish_branch: main
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: ':rocket: ${{ github.event.head_commit.message }}'

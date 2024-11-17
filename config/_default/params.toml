@@ -141,7 +141,7 @@ disableThemeInject = false
   # whether to show the author
   author = true
   # Site creation year
-  since = 2018
+  since = 2024
   # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
