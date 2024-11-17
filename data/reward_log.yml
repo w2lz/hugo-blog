@@ -1,0 +1,11 @@
+# The sponsor log data format is as follows
+
+message: "> 本页面记录了自「一个 PHP 菜鸟的心路历程」博客创建以来，所有的打赏记录。感谢大家的支持！❤️"
+currency: CNY
+symbol: ¥
+logs:
+  - date: 2024-11-17
+    sponsor: "w2lz"
+    money: 666
+    origin: 支付宝
+    remark: "希望一切顺顺利利！"

@@ -1,0 +1,18 @@
+- title: 我开发的
+  description: 下面这些是我开发过的一些开源作品。
+  totalStars: true
+  repos:
+    - w2lz/hugo-blog
+- title: 私有项目
+  repos:
+    - w2lz/blog-private
+- title: 归档项目
+  description: 下面这些开源仓库已停止更新或者用于自动化部署。
+  totalStars: true
+  repos:
+    - w2lz/w2lz.github.io
+- title: 我贡献的
+  description: 下面这些是我贡献过的一些开源作品。
+  contentAdapters: false
+  repos:
+  #  - 
