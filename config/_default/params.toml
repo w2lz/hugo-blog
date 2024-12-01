@@ -92,6 +92,19 @@ disableThemeInject = false
     appID = "QAZSU1QVH7"
     searchKey = "ffd23519a321c724dbe6bacd82d9ffd2"
 
+# FixIt 0.3.16 | NEW Custom Search Engine (CSE)
+[cse]
+  # Search Engine: ["google", "bing"]
+  engine = "google"
+  # Search results page URL (layout: search)
+  resultsPage = "/search/"
+  # Google: https://programmablesearchengine.google.com/
+  # Google Custom Search Engine Context
+  [cse.google]
+    cx = ""
+  # Bing (Unsupported): https://www.customsearch.ai/
+  [cse.bing]
+
 # Header config
 [header]
   # FixIt 0.2.13 | CHANGED desktop header mode ("sticky", "normal", "auto")
@@ -528,6 +541,31 @@ disableThemeInject = false
     id = ""
     # server url for your tracker if you're self hosting
     server = ""
+  # FixIt 0.3.16 | NEW Baidu Analytics
+  [analytics.baidu]
+    id = ""
+  # FixIt 0.3.16 | NEW Umami Analytics
+  [analytics.umami]
+    data_website_id = ""
+    src = ""
+    data_host_url = ""
+    data_domains = ""
+  # FixIt 0.3.16 | NEW Plausible Analytics
+  [analytics.plausible]
+    data_domain = ""
+    src = ""
+  # FixIt 0.3.16 | NEW Cloudflare Analytics
+  [analytics.cloudflare]
+    token = ""
+  # FixIt 0.3.16 | NEW Splitbee Analytics
+  [analytics.splitbee]
+    enable = false
+    # no cookie mode
+    no_cookie = true
+    # respect the do not track setting of the browser
+    do_not_track = true
+    # token(optional), more info on https://splitbee.io/docs/embed-the-script
+    data_token = ""
 
 # Cookie consent config
 [cookieconsent]

@@ -47,16 +47,16 @@
   [main.params]
     icon = "fa-solid fa-tags"
 [[main]]
-  identifier = "fixit"
+  identifier = "umami"
   parent = "archives"
-  pre = '<img class="fixit-icon" src="https://fixit.lruihao.cn/images/hugo-fixit.webp" alt="FixIt logo">'
   post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
-  name = "FixIt"
-  url = "https://fixit.lruihao.cn/"
-  title = "FixIt 官网"
+  name = "网站统计"
+  url = "https://cloud.umami.is/share/jXCJYlQDsxvrDjoN/blog.yingnan.wang"
+  title = "网站统计"
   weight = 4
   [main.params]
     divided = true
+    icon = "fa-solid fa-bowl-rice"
 # [[main]]
 #   identifier = "projects"
 #   pre = ""

@@ -28,7 +28,7 @@
 - [Hugo FixIt 相关](https://github.com/hugo-fixit)
 - [更多](https://github.com/w2lz?tab=repositories)
 
-## [Roadmap](https://github.com/users/w2lz/projects/1)
+## [Roadmap](https://github.com/users/w2lz/projects/4)
 
 ## Project setup
 
@@ -70,9 +70,9 @@ git clone --recursive git@github.com:w2lz/hugo-blog.git && cd hugo-blog
 
 ```bash
 # Development environment
-hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0
+hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0 -O
 # Production environment
-hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0
+hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0 -O
 ```
 
 ## License
