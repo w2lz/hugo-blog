@@ -73,6 +73,6 @@
   # My share URL: https://umami.yingnan.wang/share/bKqBY46rBmekKzDf/blog.yingnan.wang
   [analytics.umami]
     data_website_id = "2b780ddc-ae5f-480d-9edb-58b4ab0eacf8"
-    src = "https://cloud.umami.is/script.js"
+    src = "https://umami.yingnan.wang/script.js"
     data_host_url = ""
     data_domains = ""
