@@ -104,19 +104,18 @@
   name = "关于"
   url = "/about/"
   title = ""
-  weight = 100
+  weight = 666
   [main.params]
     icon = "fa-solid fa-quote-left"
 [[main]]
   identifier = "umami"
-  parent = "archives"
-  post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
+  pre = ""
+  post = ""
   name = "网站统计"
   url = "https://umami.yingnan.wang/share/bKqBY46rBmekKzDf/blog.yingnan.wang"
-  title = "网站统计"
-  weight = 600
+  title = ""
+  weight = 888
   [main.params]
-    divided = true
     icon = "fa-solid fa-bowl-rice"    
 [[main]]
   identifier = "github"
