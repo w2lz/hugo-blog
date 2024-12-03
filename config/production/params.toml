@@ -70,9 +70,9 @@
   # FixIt 0.2.10 | NEW Analytics config
 [analytics]
   enable = true
-  # My share URL: https://cloud.umami.is/share/jXCJYlQDsxvrDjoN/blog.yingnan.wang
+  # My share URL: https://umami.yingnan.wang/share/bKqBY46rBmekKzDf/blog.yingnan.wang
   [analytics.umami]
-    data_website_id = "2456b8ab-454c-4554-b21f-32503f968bc0"
+    data_website_id = "2b780ddc-ae5f-480d-9edb-58b4ab0eacf8"
     src = "https://cloud.umami.is/script.js"
     data_host_url = ""
     data_domains = ""
