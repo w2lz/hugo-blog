@@ -24,6 +24,18 @@
     table = true
     taskList = true
     typographer = true
+    # https://gohugo.io/getting-started/configuration-markup/#extras
+    [goldmark.extensions.extras]
+      [goldmark.extensions.extras.delete]
+        enable = true
+      [goldmark.extensions.extras.insert]
+        enable = true
+      [goldmark.extensions.extras.mark]
+        enable = true
+      [goldmark.extensions.extras.subscript]
+        enable = true
+      [goldmark.extensions.extras.superscript]
+        enable = true    
   # [goldmark.extensions.passthrough]
   #   enable = true
   #   [goldmark.extensions.passthrough.delimiters]

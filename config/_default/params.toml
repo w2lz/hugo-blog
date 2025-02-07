@@ -585,8 +585,9 @@ disableThemeInject = false
 
 # Compatibility config
 [compatibility]
-  # whether to use Polyfill.io to be compatible with older browsers
-  polyfill = false
+  # whether to use Polyfill.io on cdnjs to be compatible with older browsers
+  # https://cdnjs.cloudflare.com/polyfill
+  polyfill = true
   # whether to use object-fit-images to be compatible with older browsers
   objectFit = false
 
@@ -633,6 +634,58 @@ disableThemeInject = false
   # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
   theme = "minimal"
+
+# FixIt 0.3.17 | NEW PostChat AI config
+# Based on your posts to build a knowledge base, support AI summary, AI search, and AI Chatbot.
+# 使用我的邀请链接获取 PostChat Key，感谢您的支持！
+# https://ai.tianli0.top/?InviteID=JH80Y81U
+[postChat]
+  enable = false
+  key = ""
+  # How users initiate chats: ["iframe", "magic"]
+  userMode = "magic"
+  addButton = true
+  defaultInput = false
+  left = ""
+  bottom = ""
+  width = ""
+  height = ""
+  fill = ""
+  backgroundColor = "#6a64d5"
+  upLoadWeb = true
+  showInviteLink = true
+  userTitle = "Cell+"
+  userDesc = "如果你对网站的内容有任何疑问，可以来问我哦～"
+  # dom container to be blacked out, e.g. [".aplayer"]
+  blackDom = []
+  # Only for iframe mode
+  frameWidth = ""     # e.g. "375px"
+  frameHeight = ""    # e.g. "600px"
+  # only for magic mode
+  userIcon = "/images/avatar.jpg"
+  defaultChatQuestions = [
+    "你是谁?",
+    "w2lz 是谁?",
+  ]
+  defaultSearchQuestions = [
+    "给你的 Markdown 挑挑刺",
+    "中文技术文档的写作规范",
+  ]
+
+# FixIt 0.3.17 | NEW Summary AI config
+# See https://postchat.zhheo.com/summary.html
+[postSummary]
+  enable = false
+  # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
+  key = ""
+  title = ""
+  # themes options: ["", "simple", "yanzhi"]
+  theme = ""
+  postURL = ""
+  blacklist = ""
+  wordLimit = 5000
+  typingAnimate = true
+  beginningText = ""
 
 # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
 [feed]
@@ -722,6 +775,11 @@ disableThemeInject = false
     "Lruihao/bill-note",
     "hugo-fixit/hugo-atom-feed",
   ]
+  [projectsAdapters.params]
+    [projectsAdapters.params.postChat]
+        upLoadWeb = false
+      [projectsAdapters.params.postSummary]
+        enable = false
 
 # Auto translation configuration
 # See: https://github.com/xnx3/translate/
@@ -729,18 +787,31 @@ disableThemeInject = false
   enable = true
   # The translation service provider, ['client.edge', 'translate.service']
   # See: https://translate.zvo.cn/43086.html
-  service = 'client.edge'
+  service = 'translate.service'
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
+  # If not set, it will be translated to all languages
   # See the full language list: https://api.translate.zvo.cn/language.json
   languages = [
     'chinese_simplified',
     'chinese_traditional',
   ]
-  # Element IDs that needs to be ignored for translation
+  # Element IDs that needs to be ignored for translation, e.g. ["comment", ...]
   ignoreID = []
-  # Class names that need to be ignored for translation
+  # Class names that need to be ignored for translation, e.g. ["post-category", ...]
   ignoreClass = []
-  # Tag names that need to be ignored for translation
-  ignoreTag = ['title']
+  # Tag names that need to be ignored for translation, e.g. ["title", ...]
+  ignoreTag = []
+  # Selectors that need to be ignored for translation, e.g. ["[data-adapters='projects'] .single-subtitle", ...]
+  ignoreSelector = []
+  # Texts that need to be ignored for translation, e.g. ["FixIt", "Lruihao", ...]
+  ignoreText = [
+    'w2lz',
+    'RSS'
+  ]
   # Whether to detect the local language
-  detectLocalLanguage = false
+  detectLocalLanguage = true
+  # translate.js CDN
+  cdn = ""
+  # Whether to enable Enterprise-level translation channel
+  # If set to true, automatically switch to the best translation service
+  enterprise = true
