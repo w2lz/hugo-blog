@@ -3,7 +3,7 @@ module github.com/w2lz/hugo-blog
 go 1.23.3
 
 require (
-	github.com/hugo-fixit/FixIt v0.3.17-0.20250121011825-3f6666958135 // indirect
+	github.com/hugo-fixit/FixIt v0.3.20 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.0.1 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.0.1 // indirect
 	github.com/hugo-fixit/cmpt-translate v1.5.3 // indirect
